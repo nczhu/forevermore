@@ -2,7 +2,7 @@
 Forevermore is a smart contract, with a React front-end, that lets you commit your marriage vows to the blockchain. Read the motivation for this project [here](https://medium.com/@nicolezhu/why-we-committed-our-marriage-vows-to-the-blockchain-3b7c640b5927). 
 
 ## Demo
-[Forevermore.io](forevermore.io)
+[Forevermore.io](https://forevermore.io)
 
 ![alt text](https://user-images.githubusercontent.com/23445933/42493947-ff34cd6a-8448-11e8-828f-260d3fba8b1c.gif)
 
