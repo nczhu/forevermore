@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import { Link } from '../routes'
 import marriageRegistry from '../ethereum/contracts/MarriageRegistry';
 import MarriageContract from '../ethereum/contracts/Marriage';
-import { Card, Button } from 'semantic-ui-react';
+import { Card, Button, Container } from 'semantic-ui-react';
 import { epochToDate } from '../helper';
 import { Blacklist } from '../blacklist';
 import FAQs from '../components/FAQs';
@@ -59,9 +59,11 @@ class MarriageIndex extends Component {
   render() {
     return (
       <Layout>
-        <FAQs />
-        <h2 className='Vows-Title'>Vows</h2>
-        { this.renderItems() }
+        <Container>
+          <FAQs />
+          <h2 className='Vows-Title'>Vows</h2>
+          { this.renderItems() }
+        </Container>
       </Layout>
     )
   }
