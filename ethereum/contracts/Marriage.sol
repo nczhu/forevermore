@@ -50,9 +50,9 @@ contract Marriage {
     * @dev Constructor sets the original `owner` of the contract to the sender account, and
     * commits the marriage details and vows to the blockchain
     */
-    constructor(string _leftName, string _leftVows, string _rightName, string _rightVows, uint _date) public {
+    constructor(address _owner, string _leftName, string _leftVows, string _rightName, string _rightVows, uint _date) public {
         // TODO: Assert statements for year, month, day
-        owner = msg.sender;
+        owner = _owner;
         leftName = _leftName;
         leftVows = _leftVows;
         rightName = _rightName;
