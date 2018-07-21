@@ -61,7 +61,7 @@ class MarriageIndex extends Component {
       <Layout>
         <Container>
           <FAQs />
-          <h2 className='Vows-Title'>Vows</h2>
+            <a name="vows"><h2 className='Vows-Title'>Vows</h2></a>
           { this.renderItems() }
         </Container>
       </Layout>
