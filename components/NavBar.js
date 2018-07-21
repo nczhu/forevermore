@@ -39,12 +39,10 @@ class NavBar extends Component {
         </Link>
 
         <Menu.Menu position="right">
-          <Link route="/about">
             <a
-              className={"Nav-Buttons " + (this.state.pageTop ? 'Top' : 'Past-Top')}
-              >
-                About</a>
-          </Link>
+              href="#vows" 
+              className={"Nav-Buttons " + (this.state.pageTop ? 'Top' : 'Past-Top')}>
+                Vows</a>
           <Link route="/vows/new">
             <a
               className={"Nav-Buttons " + (this.state.pageTop ? 'Top' : 'Past-Top')}

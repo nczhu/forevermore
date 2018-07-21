@@ -3,9 +3,10 @@ import Layout from '../components/Layout';
 import { Link } from '../routes'
 import marriageRegistry from '../ethereum/contracts/MarriageRegistry';
 import MarriageContract from '../ethereum/contracts/Marriage';
-import { Card, Button } from 'semantic-ui-react';
+import { Card, Button, Container } from 'semantic-ui-react';
 import { epochToDate } from '../helper';
 import { Blacklist } from '../blacklist';
+import FAQs from '../components/FAQs';
 import _ from 'lodash';
 
 class MarriageIndex extends Component {
@@ -58,8 +59,11 @@ class MarriageIndex extends Component {
   render() {
     return (
       <Layout>
-        <h2 className='Vows-Title'>Vows</h2>
-        { this.renderItems() }
+        <Container>
+          <FAQs />
+            <a name="vows"><h2 className='Vows-Title'>Vows</h2></a>
+          { this.renderItems() }
+        </Container>
       </Layout>
     )
   }
