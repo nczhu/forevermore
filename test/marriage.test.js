@@ -16,11 +16,11 @@ beforeEach(async () => {
 
   marriageRegistry = await new web3.eth.Contract(JSON.parse(compiledMarriageRegistry.interface)) // Creates the idea of contract from ABI
     .deploy({ data: compiledMarriageRegistry.bytecode })       // Creates deployment package
-    .send({ from: accounts[0], gas: '1000000'});
+    .send({ from: accounts[0], gas: '3000000'});
 
-  await marriageRegistry.methods.createMarriage("Daniel", "I do", "Nicole", "I really do", 2018, 5, 19).send({
+  await marriageRegistry.methods.createMarriage("Daniel", "I do", "Nicole", "I really do", 2018-5-19).send({
     from: accounts[0],
-    gas: '1000000'
+    gas: '3000000'
   });
 
   [marriageAddress] = await marriageRegistry.methods.getDeployedMarriages().call();
